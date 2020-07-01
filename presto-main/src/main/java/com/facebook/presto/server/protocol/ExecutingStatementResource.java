@@ -127,7 +127,7 @@ public class ExecutingStatementResource
                         }
                     }
                     catch (Throwable e) {
-                        log.warn(e, "Error removing old queries");
+                        log.error(e, "Error removing old queries");
                     }
                 },
                 200,

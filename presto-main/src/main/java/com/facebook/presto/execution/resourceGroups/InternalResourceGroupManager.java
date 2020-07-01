@@ -200,7 +200,6 @@ public final class InternalResourceGroupManager<C>
                 }
                 catch (Throwable t) {
                     log.error(t, "Error while executing refreshAndStartQueries");
-                    throw t;
                 }
             }, 1, 1, MILLISECONDS);
         }
